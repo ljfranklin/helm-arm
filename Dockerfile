@@ -6,7 +6,7 @@ RUN apk update && \
 
 ENV HOME /tmp
 
-RUN wget -O /tmp/helm.tgz https://storage.googleapis.com/kubernetes-helm/helm-v2.12.0-linux-arm.tar.gz && \
+RUN wget -O /tmp/helm.tgz https://storage.googleapis.com/kubernetes-helm/helm-v2.12.1-linux-arm.tar.gz && \
   tar xvf /tmp/helm.tgz && \
   mv ./linux-arm/helm /helm && \
   mv ./linux-arm/tiller /tiller && \
